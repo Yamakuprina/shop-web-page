@@ -63,28 +63,22 @@ nav .text-container {
   width: 100%;
 }
 
-.image-container {
+.image-row {
   display: flex;
-/*  flex-direction: column;*/
-/*  align-items: center;*/
   margin: 10px;
   width: 100%;
   align-items: center;
   justify-content: center;
 }
 
-.image-container a {
+.image-row a {
   display: flex;
   width: auto;
 }
 
 .image-banner {
   display: flex;
-/*  align-items: center;*/
-/*  justify-content: center;*/
-/*  flex-direction: row;*/
   align-self: center;
-/*  object-fit: cover;*/
   margin: 10px;
   border-radius: 2%;
   height: 300px;
@@ -107,7 +101,52 @@ nav .text-container {
 }
 
 .grid {
-  
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 250px 250px 250px 250px;
+
+}
+
+.grid-element {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3%;
+  width: 200px;
+  background-color: #2F2F2F;
+}
+
+.grid-element:hover {
+  filter: brightness(80%);
+}
+
+.grid-element a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-element-image {
+  justify-content: center;
+  width: 170px;
+  height: 200px;
+  border-radius: 3%;
+  padding: 10px;
+}
+
+.grid-element-bottom {
+  padding: 10px;
+  color: white;
+  font-family: 'Trebuchet MS';
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.price-block {
+  padding: 5px;
+  font-size: 30px;
 }
 
 footer {
